@@ -11,6 +11,8 @@
     --white-color: #FFFFFF;
     --black-color: #000000;
     --light-blue: #1A1A6D;
+    --gray-color:#50616c;
+    --light-gray:#808080;
     /* font-family */
     --primar-font: "poppins";
 }
@@ -277,7 +279,9 @@ img {
     color: var(--white-color);
     margin-bottom: 0.8rem;
 }
-
+.whyChoose_desc{
+    color: var(--light-gray);
+}
 .whyChoose_topbar p {
     font-size: 16px;
     color: var(--white-color);
@@ -304,19 +308,33 @@ img {
     height: 100%;
     border-radius: 8px;
 }
+.whyChoose_info:hover {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+}
+.whyChoose_info:hover .whyChoose_img{
+    background-color: var(--white-color);
 
+}
+.whyChoose_title{
+    font-size: 18px;
+    margin-bottom: 8px;
+}
 .whyChoose_img {
     max-width: 5rem;
+    padding: 18px;
+    background-color:var(--gray-color);
+    border-radius: 50%;
     margin-inline: auto;
     margin-bottom: 1rem;
     transition: all 0.3s ease-in-out;
 }
 
-.whyChoose_card:hover .whyChoose_img {
+.whyChoose_card:hover .whyChoose_img img {
     filter: brightness(0) saturate(100%) invert(25%) sepia(89%) saturate(4629%) hue-rotate(345deg) brightness(95%) contrast(89%);
 }
 .newsletter{
-    background-image: url("../assets/images/newsletter-bg.jpg");
+    background-image: url("/assets/images/newsletter-bg.jpg");
     background-position: center;
     background-attachment: fixed;
     background-size: cover;  
